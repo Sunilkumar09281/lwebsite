@@ -42,7 +42,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-
+{/* s */}
       {/* Main Header */}
       <header className="bg-background/95 backdrop-blur-sm border-b border-border sticky top-0 z-50 shadow-card">
         <div className="container mx-auto px-4">
