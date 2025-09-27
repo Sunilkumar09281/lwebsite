@@ -345,7 +345,7 @@ const About = () => {
             to advance your career, Inspenix stands as your dependable partner in quality, safety, and compliance.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center fade-in" style={{animationDelay: "0.4s"}}>
-            <a href="mailto:info-ind@inspenix.com">
+            <a href="/Contact">
               <Button className="btn-hero text-lg px-8 py-4">
                 Get in Touch <ArrowRight className="ml-2 h-5 w-5" />
               </Button>

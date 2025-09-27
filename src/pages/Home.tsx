@@ -54,43 +54,66 @@ const Home = () => {
   return (
     <div className="overflow-hidden">
       {/* Hero Section */}
-      <section className="hero-background relative min-h-screen flex items-center">
-        <div className="absolute inset-0 z-0">
-          <img 
-            src={heroImage} 
-            alt="Industrial facility" 
-            className="w-full h-full object-cover opacity-20"
-          />
-          <div className="absolute inset-0 bg-gradient-overlay"></div>
-        </div>
-        
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto text-center text-primary-foreground">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 fade-in">
-              Empowering industries with Inspenix's expert 
-              <span className="text-secondary"> Inspection, NDT, and Auditor Training Services</span>
-            </h1>
-            
-            <p className="text-xl md:text-2xl mb-8 text-primary-foreground/90 fade-in" style={{animationDelay: "0.2s"}}>
-              Delivering ISO training, NDT consultancy, and third-party inspections 
-              across Saudi Arabia and India.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4 justify-center fade-in" style={{animationDelay: "0.4s"}}>
-              <Link to="/services">
-                <Button className="btn-hero text-lg px-8 py-4">
-                  Our Services <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </Link>
-              <Link to="/training">
-                <Button variant="outline" className="text-lg px-8 py-4 border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground">
-                  Training Programs
-                </Button>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+<section className="relative min-h-screen flex items-center">
+  {/* Background video */}
+  <div className="absolute inset-0 z-0 overflow-hidden">
+   <video
+  autoPlay
+  muted
+  loop
+  playsInline
+  className="w-full h-full object-cover"
+>
+  <source 
+    src="https://media.istockphoto.com/id/1266745199/video/heating-equipment-in-a-boiler-room-of-the-large-enterprise.mp4?s=mp4-640x640-is&k=20&c=8vGOZ1Q962H3oymJR118_gOj7rs63HXairJor8Ypn6k=" 
+    type="video/mp4" 
+  />
+  Your browser does not support the video tag.
+</video>
+
+
+    {/* Light blue transparent overlay */}
+    <div className="absolute inset-0 bg-blue-900/30"></div>
+  </div>
+
+  {/* Hero Content */}
+  <div className="container mx-auto px-4 relative z-10">
+    <div className="max-w-4xl mx-auto text-center text-white">
+      <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 fade-in">
+        Empowering industries with Inspenix's expert 
+        <span className="text-cyan-400"> Inspection, NDT, and Auditor Training Services</span>
+      </h1>
+      
+      <p 
+        className="text-xl md:text-2xl mb-8 text-white/90 fade-in" 
+        style={{animationDelay: "0.2s"}}
+      >
+        Delivering ISO training, NDT consultancy, and third-party inspections 
+        across Saudi Arabia and India.
+      </p>
+      
+      <div 
+        className="flex flex-col sm:flex-row gap-4 justify-center fade-in" 
+        style={{animationDelay: "0.4s"}}
+      >
+        <Link to="/services">
+          <Button className="btn-hero text-lg px-8 py-4">
+            Our Services <ArrowRight className="ml-2 h-5 w-5" />
+          </Button>
+        </Link>
+        <Link to="/training">
+          <Button 
+            variant="outline" 
+            className="text-lg px-8 py-4 border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-white"
+          >
+            Training Programs
+          </Button>
+        </Link>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Stats Section */}
       <section className="py-16 bg-accent/30">
@@ -225,7 +248,7 @@ const Home = () => {
       </section>
 
       {/* Client Feedback */}
-      <section className="py-20 bg-accent/30">
+      {/* <section className="py-20 bg-accent/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6 fade-in">
@@ -264,7 +287,7 @@ const Home = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

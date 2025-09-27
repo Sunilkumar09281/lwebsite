@@ -42,7 +42,7 @@ const ContactForm = () => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(formData.email)) {
       toast({
-        title: "Error", 
+        title: "Error",
         description: "Please enter a valid email address.",
         variant: "destructive"
       });
@@ -51,32 +51,30 @@ const ContactForm = () => {
     }
 
     try {
-      // Create mailto link with form data
-      const subject = encodeURIComponent("Contact Form Submission from Website");
-      const body = encodeURIComponent(
-        `Name: ${formData.firstName}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
-      );
-      const mailtoLink = `mailto:info-ind@inspenix.com?subject=${subject}&body=${body}`;
-      
-      // Open email client
-      window.location.href = mailtoLink;
-      
-      // Show success message
-      toast({
-        title: "Success!",
-        description: "Your email client has been opened with your message. Please send the email to complete your inquiry.",
+      // 🔑 Replace with your actual Formspree endpoint
+      const response = await fetch("https://formspree.io/f/mldpgpjy", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
       });
 
-      // Reset form
-      setFormData({
-        firstName: "",
-        email: "",
-        message: ""
-      });
+      if (response.ok) {
+        toast({
+          title: "Success!",
+          description: "Your message has been sent successfully.",
+        });
+        setFormData({ firstName: "", email: "", message: "" });
+      } else {
+        toast({
+          title: "Error",
+          description: "Failed to send message. Try again later.",
+          variant: "destructive"
+        });
+      }
     } catch (error) {
       toast({
         title: "Error",
-        description: "There was an error processing your request. Please try again.",
+        description: "There was an error connecting to the server.",
         variant: "destructive"
       });
     } finally {

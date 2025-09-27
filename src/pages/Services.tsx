@@ -222,11 +222,11 @@ const Services = () => {
             achieve excellence in quality, safety, and compliance.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center fade-in" style={{animationDelay: "0.4s"}}>
-            <a href="mailto:info-ind@inspenix.com">
+            {/* <a href="mailto:info-ind@inspenix.com">
               <Button className="bg-secondary hover:bg-secondary/90 text-secondary-foreground px-8 py-4 text-lg">
                 Get Started Today
               </Button>
-            </a>
+            </a> */}
             <Link to="/training">
               <Button variant="outline" className="border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground px-8 py-4 text-lg">
                 View Training Programs

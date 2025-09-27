@@ -162,9 +162,9 @@ const Training = () => {
                   
                   <div className="mt-6">
                     <a href={`mailto:info-ind@inspenix.com?subject=Training Inquiry - ${program.title}`}>
-                      <Button className="w-full btn-secondary">
+                      {/* <Button className="w-full btn-secondary">
                         Enroll Now <ArrowRight className="ml-2 h-4 w-4" />
-                      </Button>
+                      </Button> */}
                     </a>
                   </div>
                 </CardContent>
@@ -201,13 +201,13 @@ const Training = () => {
                 ))}
               </div>
               
-              <div className="mt-8">
+              {/* <div className="mt-8">
                 <a href="mailto:info-ind@inspenix.com?subject=NDT Training Inquiry">
                   <Button className="btn-hero">
                     Get NDT Training Details <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
                 </a>
-              </div>
+              </div> */}
             </div>
 
             <div className="slide-in-right">
@@ -258,11 +258,21 @@ const Training = () => {
             </div>
 
             <div className="text-center mt-12">
-              <a href="mailto:info-ind@inspenix.com?subject=Industrial Training Inquiry">
-                <Button className="btn-secondary text-lg px-8 py-4">
-                  Request Custom Training <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </a>
+<a
+  href="#inquiry-form"
+  onClick={() => {
+    setTimeout(() => {
+      const event = new Event("show-footer-popup");
+      window.dispatchEvent(event);
+    }, 300); // wait for scroll to finish
+  }}
+>
+  <Button className="btn-secondary text-lg px-8 py-4">
+    Request Custom Training <ArrowRight className="ml-2 h-5 w-5" />
+  </Button>
+</a>
+
+
             </div>
           </div>
         </div>
@@ -327,11 +337,11 @@ const Training = () => {
             Join thousands of professionals who have enhanced their skills through our comprehensive training programs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center fade-in" style={{animationDelay: "0.4s"}}>
-            <a href="mailto:info-ind@inspenix.com?subject=Training Program Inquiry">
+            {/* <a href="mailto:info-ind@inspenix.com?subject=Training Program Inquiry">
               <Button className="bg-secondary hover:bg-secondary/90 text-secondary-foreground px-8 py-4 text-lg">
                 Enroll Today
               </Button>
-            </a>
+            </a> */}
             <Link to="/services">
               <Button variant="outline" className="border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground px-8 py-4 text-lg">
                 View All Services
