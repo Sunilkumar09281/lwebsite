@@ -333,6 +333,12 @@ const About = () => {
           </div>
         </div>
       </section>
+      {/* Hidden Co-Founders Acknowledgement */}
+<section className="py-10 text-center text-sm text-muted-foreground opacity-50">
+  <p>Special Acknowledgement to:</p>
+  <p>Mr. Ali Falah Ali Al-Hajri & Mr. Mubarak Falah Ali Al Hajri (Co-Founders)</p>
+</section>
+
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-subtle">
