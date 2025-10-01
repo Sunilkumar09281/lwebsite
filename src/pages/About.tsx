@@ -114,15 +114,15 @@ const About = () => {
                   <div className="text-muted-foreground">Years Experience</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary mb-2">1000+</div>
+                  <div className="text-3xl font-bold text-primary mb-2">100+</div>
                   <div className="text-muted-foreground">Professionals Trained</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary mb-2">500+</div>
+                  <div className="text-3xl font-bold text-primary mb-2">50+</div>
                   <div className="text-muted-foreground">Projects Completed</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary mb-2">20+</div>
+                  <div className="text-3xl font-bold text-primary mb-2">4+</div>
                   <div className="text-muted-foreground">Countries Served</div>
                 </div>
               </div>
@@ -214,7 +214,7 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-primary mb-6 fade-in">
-              Leadership Team
+              Our Team
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto fade-in" style={{animationDelay: "0.2s"}}>
               Meet the visionary leaders driving Inspenix International Solutions toward excellence 
