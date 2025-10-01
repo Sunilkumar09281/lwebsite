@@ -11,8 +11,8 @@ const Home = () => {
   const stats = [
     { icon: Users, label: "Expert Professionals", value: "50+" },
     { icon: Award, label: "Years of Experience", value: "15+" },
-    { icon: Globe, label: "Countries Served", value: "20+" },
-    { icon: Zap, label: "Projects Completed", value: "1000+" },
+    { icon: Globe, label: "Countries Served", value: "4+" },
+    { icon: Zap, label: "Projects Completed", value: "50+" },
   ];
 
   const services = [

@@ -8,10 +8,10 @@ import technicalTraining from "@/assets/technical-training.jpg";
 
 const Services = () => {
   const ndtServices = [
-    "ASNT Level III Consultancy & Procedure Preparation",
-    "Third-Party NDT Inspection Coordination", 
+    "ASNT Level III Consultancy & Procedure Preparation & Review and Approval",
+    "Third-Party NDT Inspections", 
     "NDT Personnel Qualification Support (as per SNTTC-1A / ISO 9712)",
-    "NDT Method Support: RT, UT, MT, PT, VT, PAUT, TOFD"
+    "NDT Method Support: RT, UT, MT, PT, VT, ET, IR, AI, MFL, PAUT & TOFD"
   ];
 
   const auditingServices = [
